@@ -49,4 +49,8 @@ dependencies: /Users/benedikt/BBPulse/src/BBPulseApp.cpp \
   ../../../../Applications/cinder_0.8.5_mac/include/cinder/audio/CocoaCaConverter.h \
   ../../../../Applications/cinder_0.8.5_mac/include/cinder/Rand.h \
   /Users/benedikt/BBPulse/xcode/../blocks/OSC/src/OscListener.h \
-  ../blocks/OSC/src/OscMessage.h ../blocks/OSC/src/OscArg.h
+  ../blocks/OSC/src/OscMessage.h ../blocks/OSC/src/OscArg.h \
+  /Users/benedikt/BBPulse/xcode/src/cinderSyphon.h \
+  /Users/benedikt/BBPulse/xcode/src/syphonClient.h \
+  ../../../../Applications/cinder_0.8.5_mac/include/cinder/gl/Texture.h \
+  /Users/benedikt/BBPulse/xcode/src/syphonServer.h

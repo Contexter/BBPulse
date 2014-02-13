@@ -6,6 +6,12 @@
 #include "cinder/CinderMath.h"
 #include "OSCListener.h"
 
+//„Sharing graphics between applications“
+//
+// Auszug aus: „Cinder Creative Coding Cookbook [eBook].epub.“ iBooks. https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=8EE9D2A4F41A2550CC46BD2D27DB9103
+
+#include "cinderSyphon.h"
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -32,6 +38,8 @@ class BBPulseApp : public AppNative {
     int mDelayIndex;
     int mDelaySize;
     
+    syphonServer BBPulseSyphon;
+    
 };
 
 void BBPulseApp::setup()
@@ -55,6 +63,9 @@ void BBPulseApp::setup()
         mDelayLine.push_back( 0.0f );
     }
     mDelayIndex = 0;
+    
+    BBPulseSyphon.setName("BBSyphon Screen");
+    
 }
 
 void BBPulseApp::mouseDown( MouseEvent event )
@@ -91,7 +102,7 @@ void BBPulseApp::draw()
         }
         
         gl::end();
-        
+        BBPulseSyphon.publishScreen();
         
     }
 }
