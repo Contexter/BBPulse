@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/OSC/src/ip/posix/UdpSocket.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/OSC/src/ip/posix/UdpSocket.cpp \
   ../blocks/OSC/src/ip/UdpSocket.h \
   ../blocks/OSC/src/ip/NetworkingUtils.h \
   ../blocks/OSC/src/ip/IpEndpointName.h \

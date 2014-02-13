@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2Fixture.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2Fixture.cpp \
   ../blocks/Box2D/src/Box2D/Dynamics/b2Fixture.h \
   ../blocks/Box2D/src/Box2D/Dynamics/b2Body.h \
   ../blocks/Box2D/src/Box2D/Common/b2Math.h \

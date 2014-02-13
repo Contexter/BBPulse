@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/Box2D/src/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/Box2D/src/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp \
   ../blocks/Box2D/src/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
   ../blocks/Box2D/src/Box2D/Dynamics/Joints/b2Joint.h \
   ../blocks/Box2D/src/Box2D/Common/b2Math.h \

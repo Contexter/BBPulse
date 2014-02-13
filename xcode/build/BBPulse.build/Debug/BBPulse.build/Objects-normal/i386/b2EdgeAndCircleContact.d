@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/Box2D/src/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/Box2D/src/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp \
   ../blocks/Box2D/src/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h \
   ../blocks/Box2D/src/Box2D/Dynamics/Contacts/b2Contact.h \
   ../blocks/Box2D/src/Box2D/Common/b2Math.h \

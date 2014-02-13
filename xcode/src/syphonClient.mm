@@ -61,7 +61,29 @@ void syphonClient::setup()
     [pool drain];
 }
 
-void syphonClient::setApplicationName(std::string appName)
+void syphonClient::set(syphonServerDescription _server){
+    set(_server.serverName, _server.appName);
+}
+
+void syphonClient::set(std::string _serverName, std::string _appName){
+    if(bSetup)
+    {
+        NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+        
+        NSString *nsAppName = [NSString stringWithCString:_appName.c_str() encoding:[NSString defaultCStringEncoding]];
+        NSString *nsServerName = [NSString stringWithCString:_serverName.c_str() encoding:[NSString defaultCStringEncoding]];
+        
+        [(SyphonNameboundClient*)mClient setAppName:nsAppName];
+        [(SyphonNameboundClient*)mClient setName:nsServerName];
+        
+        appName = _appName;
+        serverName = _serverName;
+        
+        [pool drain];
+    }
+}
+
+void syphonClient::setApplicationName(std::string _appName)
 {
     if(bSetup)
     {
@@ -70,12 +92,14 @@ void syphonClient::setApplicationName(std::string appName)
         NSString *name = [NSString stringWithCString:appName.c_str() encoding:[NSString defaultCStringEncoding]];
         
         [(SyphonNameboundClient*)mClient setAppName:name];
+        
+        appName = _appName;
 		
         [pool drain];
     }
     
 }
-void syphonClient::setServerName(std::string serverName)
+void syphonClient::setServerName(std::string _serverName)
 {
     if(bSetup)
     {
@@ -87,6 +111,8 @@ void syphonClient::setServerName(std::string serverName)
             name = nil;
         
         [(SyphonNameboundClient*)mClient setName:name];
+        
+        serverName = _serverName;
 		
         [pool drain];
     }    
@@ -105,8 +131,8 @@ void syphonClient::bind()
 		NSSize texSize = [(SyphonImage*)latestImage textureSize];
 		GLuint m_id = [(SyphonImage*)latestImage textureName];
 
-		mTex = new ci::gl::Texture(GL_TEXTURE_RECTANGLE_ARB, m_id,
-								   texSize.width, texSize.height, false);
+		mTex = ci::gl::Texture::create(GL_TEXTURE_RECTANGLE_ARB, m_id,
+								   texSize.width, texSize.height, true);
 		mTex->setFlipped();
 		
 		mTex->bind();
@@ -159,4 +185,12 @@ void syphonClient::draw(float x, float y)
 		ci::gl::draw(*mTex,ci::Vec2f(x, y));
 		this->unbind();
 	}
+}
+
+std::string& syphonClient::getApplicationName(){
+    return appName;
+}
+
+std::string& syphonClient::getServerName(){
+    return serverName;
 }

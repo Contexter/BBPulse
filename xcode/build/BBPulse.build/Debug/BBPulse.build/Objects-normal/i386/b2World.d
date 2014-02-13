@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2World.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2World.cpp \
   ../blocks/Box2D/src/Box2D/Dynamics/b2World.h \
   ../blocks/Box2D/src/Box2D/Common/b2Math.h \
   ../blocks/Box2D/src/Box2D/Common/b2Settings.h \

@@ -1,2 +1,3 @@
-dependencies: /Users/benedikt/BBPulse/blocks/OSC/src/osc/OscTypes.cpp \
-  /Users/benedikt/BBPulse/blocks/OSC/src/osc/OscTypes.h
+dependencies: \
+  /Users/benedikteickhoff/BBPulse/blocks/OSC/src/osc/OscTypes.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/OSC/src/osc/OscTypes.h

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/AudioUnit/src/TPCircularBuffer/TPCircularBuffer.cpp \
-  /Users/benedikt/BBPulse/blocks/AudioUnit/src/TPCircularBuffer/TPCircularBuffer.h
+  /Users/benedikteickhoff/BBPulse/blocks/AudioUnit/src/TPCircularBuffer/TPCircularBuffer.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/AudioUnit/src/TPCircularBuffer/TPCircularBuffer.h

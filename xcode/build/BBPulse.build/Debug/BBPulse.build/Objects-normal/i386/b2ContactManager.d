@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/benedikt/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2ContactManager.cpp \
+  /Users/benedikteickhoff/BBPulse/blocks/Box2D/src/Box2D/Dynamics/b2ContactManager.cpp \
   ../blocks/Box2D/src/Box2D/Dynamics/b2ContactManager.h \
   ../blocks/Box2D/src/Box2D/Collision/b2BroadPhase.h \
   ../blocks/Box2D/src/Box2D/Common/b2Settings.h \

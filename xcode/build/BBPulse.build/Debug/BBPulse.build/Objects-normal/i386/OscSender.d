@@ -1,4 +1,5 @@
-dependencies: /Users/benedikt/BBPulse/blocks/OSC/src/OscSender.cpp \
+dependencies: \
+  /Users/benedikteickhoff/BBPulse/blocks/OSC/src/OscSender.cpp \
   ../blocks/OSC/src/OscSender.h ../blocks/OSC/src/OscBundle.h \
   ../blocks/OSC/src/OscMessage.h ../blocks/OSC/src/OscArg.h \
   ../blocks/OSC/src/osc/OscOutboundPacketStream.h \
